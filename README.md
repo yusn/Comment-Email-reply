@@ -1,16 +1,17 @@
 #说明
-原版本已经不能正常工作了，做了更新使之能够正常工作，感谢原作者！
+原版本已经不能正常工作了，做了更新使之能够正常工作，目前能够支持到 WordPress 4.7，感谢原作者！
 #Reference
-Contributors: kilozwo
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W487VEEQCRQ42
-Tags: Comments, Reply, Notification, Email, Author, notify Comment-Author,
-Requires at least: 3.0.1
-Tested up to: 4.1.1
-Stable tag: 1.0.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+== Comment-Email-reply == 
+* Contributors: kilozwo
+* Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W487VEEQCRQ42
+* Tags: Comments, Reply, Notification, Email, Author, notify Comment-Author,
+* Requires at least: 3.0.1
+* Tested up to: 4.1.1
+* Stable tag: 1.0.4
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simply notifies comment-author via email if someone replies to his comment. Zero Configuration.       
+* Simply notifies comment-author via email if someone replies to his comment. Zero Configuration.       
 
 == Description ==
 
