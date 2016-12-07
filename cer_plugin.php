@@ -55,7 +55,7 @@ function cer_comment_notification($commentId, $comment) {
 				'<a class="d h k l" href="'.get_comment_link( $parent->comment_ID ).'">继续回复他/她</a>'.
 				'<div class="f">感谢支持，谢谢！</div>'.'<div class="e"><span class="p">A<span class="m">A</span>A</span></div></div></div></div>';
 		$email = $parent->comment_author_email;
-		$title ='来自 ['.get_option('blogname') . '] 的评论回复', $mailcontent);
+		$title ='来自 ['.get_option('blogname') . '] 的评论回复';
 		wp_mail($email, $title, $mailcontent);
     }
 }
