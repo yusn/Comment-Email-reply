@@ -1,5 +1,6 @@
 #说明
-原版本已经不能正常工作了，做了更新使之能够正常工作，目前能够支持到 WordPress 4.7，感谢原作者！
+* 原版本已经不能正常工作了，做了更新使之能够正常工作，目前能够支持到 WordPress 4.7，感谢原作者！
+* 基于 1.0.4 版本做的更新
 #Reference
 == Comment-Email-reply == 
 * Contributors: kilozwo
@@ -25,21 +26,3 @@ Simply notifies comment-author via email if someone replies to his comment. Zero
 3. Activate the plugin in your admin-backend.
 
 That's all!
-
-== Changelog ==
-
-= 1.0.4 =
-* Added some patches regarding spam handling. (Thanks to Jonathan)
-* Blogname and admin email added to "From" mailheader.
-
-= 1.0.3 =
-* Changed charset to UTF-8.
-
-= 1.0.2 =
-* Fixed problems with html-encoding.
-
-= 1.0.1 =
-* Bugfix in Mail-Text fixed.
-
-= 1.0 =
-* first stable version.
