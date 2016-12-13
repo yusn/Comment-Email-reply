@@ -5,7 +5,7 @@
 #Reference
 == Comment-Email-reply == 
 * Contributors: kilozwo
-* Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W487VEEQCRQ42
+* link: https://github.com/kilozwo/Comment-Email-reply
 * Tags: Comments, Reply, Notification, Email, Author, notify Comment-Author,
 * Requires at least: 3.0.1
 * Tested up to: 4.1.1
