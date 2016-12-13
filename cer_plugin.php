@@ -18,8 +18,10 @@ function cer_comment_notification($commentId, $comment) {
         $parent = get_comment($comment->comment_parent);
 
         $mailcontent =
-				'<style type="text/css">
-				#mgy{margin:0;padding:0;font-size:16px;line-height:1.8;color:#444}
+				'<html>
+				<head>
+				<style>
+				#mgy{margin:0;padding:0;font-size:16px;font-size:1rem;line-height:1.8;color:#444}
 				#mgy .a{width:100%}
 				#mgy .b{width:520px;margin:0 auto;padding:20px}
 				#mgy .c{clear:both}
@@ -37,11 +39,13 @@ function cer_comment_notification($commentId, $comment) {
 				#mgy .p{color:#5A5A5A}
 				#mgy .q{background:#F1F1F1;border-radius:4px;padding:2px 8px}
 				#mgy .s{color:#2458A1}
-				@media screen and (max-width: 620px) {
-					#mgy{font-size:16px;line-height:2}
+				@media screen and (max-width:720px) {
+					#mgy{font-size:18px;font-size:1.125rem;line-height:2}
 					#mgy .b{width:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 				}
 				</style>
+				</head>
+				<body>
 				<div id="mgy">
 				<div class="a"><div class="b"><div class="o"><span class="g">'
 				.$parent->comment_author.
@@ -52,8 +56,9 @@ function cer_comment_notification($commentId, $comment) {
 				'<div class="f">作了如下回复:</div><div class="d s q">'
 				. esc_html($comment->comment_content) .
 				'</div>'.
-				'<a class="d h k l" href="'.get_comment_link( $parent->comment_ID ).'">继续回复他/她</a>'.
-				'<div class="f">感谢支持，谢谢！</div>'.'<div class="e"><span class="p">A<span class="m">A</span>A</span></div></div></div></div>';
+				'<a class="d h k l" href="'.get_comment_link( $parent->comment_ID ).'">继续回复</a>'.
+				'<div class="f">感谢支持，谢谢！</div>'.'<div class="e"><span class="p">A<span class="m">A</span>A</span></div></div></div></div>
+				</body></html>';
 		$email = $parent->comment_author_email;
 		$title ='来自 ['.get_option('blogname') . '] 的评论回复';
 		wp_mail($email, $title, $mailcontent);
