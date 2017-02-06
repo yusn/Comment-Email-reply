@@ -62,7 +62,7 @@ function cer_comment_notification($comment_id) {
 add_action('comment_mail_notify','cer_comment_notification');
 
 function comment_mail_notify_schedule($comment_id) {
-	wp_schedule_single_event( time()+5, 'comment_mail_notify', array($comment_id));
+	wp_schedule_single_event( time()+300, 'comment_mail_notify', array($comment_id));
 }
 add_action('wp_insert_comment','comment_mail_notify_schedule',99,2);
 
